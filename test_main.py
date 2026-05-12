@@ -11,4 +11,4 @@ def test_root():
 def test_add():
     response = client.get("/add?a=2&b=3")
     assert response.status_code == 200
-    assert response.json() == {"result": 5}
+    assert response.json() == {"result": 999}  # неправильна відповідь
